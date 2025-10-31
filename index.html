@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       NexaDigital – Markanı Büyüt ve Daha Fazla Müşteriye Ulaş
-    \1
-    <style>
-      @media (max-width: 480px) {
-        .text-balance { text-wrap: balance; }
-        .break-words { word-break: break-word; overflow-wrap: anywhere; }
-        pre { white-space: pre-wrap; word-break: break-word; }
-      }
-    </style>
+    </title>
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -20,7 +14,17 @@
       name="description"
       content="Markanı büyüt, daha çok müşteriye ulaş. NexaDigital web sitesi + reklam + otomasyon kurar, sana her gün satışa hazır müşteri gönderir."
     />
-  </head>
+  
+<style>
+  @media (max-width: 480px) {
+    .text-balance { text-wrap: balance; }
+    .break-words { word-break: break-word; overflow-wrap: anywhere; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+    .container, .mx-auto { padding-left: 1rem; padding-right: 1rem; }
+  }
+</style>
+
+</head>
 
   <body
     class="bg-[#05070d] text-white min-h-screen w-full font-sans antialiased selection:bg-cyan-400/30 selection:text-white"
@@ -30,7 +34,7 @@
       class="sticky top-0 z-50 w-full bg-[#05070d]/80 backdrop-blur-xl border-b border-white/10"
     >
       <div
-        class="w-full max-w-7xl mx-auto flex items-center justify-between py-4 px-6 lg:px-8"
+        class="w-full max-w-7xl mx-auto flex items-center justify-between py-4 px-6 lg:px-4 md:px-8"
       >
         <div class="flex items-center gap-2">
           <!-- Sparkles icon box / logo -->
@@ -91,36 +95,27 @@
           <a href="#faq" class="hover:text-white transition">SSS</a>
         </nav>
 
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 flex-wrap"><button id="mobileMenuToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl ring-1 ring-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="Menüyü Aç/Kapat" aria-expanded="false"><svg id="mobileMenuIconOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="mobileMenuIconClose" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
           <a
             href="#contact"
-            class="bg-cyan-500 text-black font-semibold rounded-xl px-4 py-2 text-sm hover:bg-cyan-400 active:scale-[.98] transition shadow-[0_8px_40px_rgba(0,200,255,0.4)]"
+            class="bg-cyan-500 text-black font-semibold rounded-xl px-4 py-2 text-sm hover:bg-cyan-400 active:scale-[.98] transition shadow-[0_8px_40px_rgba(0,200,255,0.4)] w-full md:w-auto"
           >
             Markamı Büyüt • Daha Çok Müşteri
           </a>
 
           <a
             href="https://wa.me/905324514008?text=Markam%C4%B1%20b%C3%BCy%C3%BCtmek%20ve%20daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20almak%20istiyorum"
-            class="bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 active:scale-[.98] transition shadow-[0_0_20px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40"
+            class="bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 active:scale-[.98] transition shadow-[0_0_20px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40 w-full md:w-auto"
           >
             WhatsApp: Hemen Büyüt
           </a>
-        
-          <button id="mobileMenuToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl ring-1 ring-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
-            <svg id="mobileMenuIconOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg id="mobileMenuIconClose" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
         </div>
       </div>
     </header>
 
     <!-- HERO -->
     <section
-      class="relative w-full max-w-7xl mx-auto px-6 lg:px-8 pt-10 pb-16 lg:pt-16 lg:pb-24 grid lg:grid-cols-2 gap-12"
+      class="relative w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pt-10 pb-16 lg:pt-16 lg:pb-24 grid lg:grid-cols-1 md:grid-cols-2 gap-6 md:gap-12"
     >
       <div
         class="absolute inset-0 max-w-xl mx-auto lg:mx-0 blur-[120px] h-72 w-72 bg-cyan-500/10 rounded-full pointer-events-none -z-10"
@@ -144,7 +139,7 @@
         </div>
 
         <h1
-          class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white tracking-[-0.04em] leading-[1.1]"
+          class="text-3xl sm:text-2xl md:text-4xl lg:text-3xl md:text-5xl font-semibold text-white tracking-[-0.04em] leading-[1.1]"
         >
           <div class="flex flex-col gap-2">
             <span>Markanı <span class="text-cyan-400">büyüt.</span></span>
@@ -190,7 +185,7 @@
         >
           <a
             href="#contact"
-            class="bg-white text-black font-semibold rounded-xl px-5 py-3 text-sm flex items-center gap-2 hover:bg-cyan-400 hover:text-black transition shadow-[0_20px_60px_rgba(255,255,255,0.08)]"
+            class="bg-white text-black font-semibold rounded-xl px-5 py-3 text-sm flex items-center gap-2 hover:bg-cyan-400 hover:text-black transition shadow-[0_20px_60px_rgba(255,255,255,0.08)] w-full md:w-auto"
           >
             <span>Markamı Büyüt – Daha Fazla Müşteri</span>
             <svg
@@ -208,7 +203,7 @@
 
           <a
             href="https://wa.me/905324514008?text=Daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20almak%20ve%20markam%C4%B1%20b%C3%BCy%C3%BCtmek%20istiyorum"
-            class="flex items-center gap-2 text-sm font-semibold rounded-xl px-5 py-3 bg-[#25D366] text-black hover:opacity-90 shadow-[0_0_30px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40"
+            class="flex items-center gap-2 text-sm font-semibold rounded-xl px-5 py-3 bg-[#25D366] text-black hover:opacity-90 shadow-[0_0_30px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40 w-full md:w-auto"
           >
             <span>Daha Çok Müşteriye Ulaş</span>
             <svg
@@ -279,7 +274,7 @@
           <p class="text-xs text-white/50">— Müşteri Yorumu</p>
 
           <div
-            class="mt-4 grid grid-cols-2 gap-4 text-[11px] bg-black/30 rounded-xl ring-1 ring-white/10 p-4"
+            class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-[11px] bg-black/30 rounded-xl ring-1 ring-white/10 p-4"
           >
             <div class="flex flex-col">
               <span class="text-white/40">Son 7 Gün</span>
@@ -308,7 +303,7 @@
     <!-- SERVICES -->
     <section
       id="services"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-20"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-20"
     >
       <h2
         class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] mb-4 leading-tight"
@@ -323,7 +318,7 @@
         arar mısınız?” diyen doğru kişiyi sana getirmek.
       </p>
 
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Card 1: Web -->
         <div
           class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col"
@@ -937,7 +932,7 @@
     <!-- FLOW -->
     <section
       id="flow"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <h2
         class="text-white text-2xl sm:text-3xl font-semibold mb-2"
@@ -953,7 +948,7 @@
         diyoruz.
       </p>
 
-      <div class="grid lg:grid-cols-4 gap-6">
+      <div class="grid lg:grid-cols-1 md:grid-cols-4 gap-6">
         <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
           <div class="text-[10px] text-white/30">Adım 01</div>
           <div class="text-white font-semibold text-lg">
@@ -1004,7 +999,7 @@
     <!-- n8n / OTOMASYON -->
     <section
       id="n8n"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <div
         class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8"
@@ -1021,7 +1016,7 @@
           “Bu müşteri sıcak, hemen ara” diye seni uyarıyor.
         </p>
 
-        <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="grid md:grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div
             class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5"
           >
@@ -1074,7 +1069,7 @@
           </div>
         </div>
 
-        <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <div class="mt-8 grid lg:grid-cols-1 md:grid-cols-2 gap-6">
           <div
             class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5"
           >
@@ -1121,7 +1116,7 @@
 
             <a
               href="https://wa.me/905324514008?text=Daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20i%C3%A7in%20otomasyon%20kurmak%20istiyorum"
-              class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 ring-1 ring-[#25D366]/40"
+              class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 ring-1 ring-[#25D366]/40 w-full md:w-auto"
               >Otomasyon İstiyorum</a
             >
           </div>
@@ -1132,7 +1127,7 @@
     <!-- CRM Eğitim -->
     <section
       id="crm-edu"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <div
         class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8"
@@ -1151,7 +1146,7 @@
           olsun, sıcak müşteri soğumasın.
         </p>
 
-        <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="grid md:grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div
             class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5"
           >
@@ -1216,7 +1211,7 @@
 
             <a
               href="https://wa.me/905324514008?text=CRM%20egitimine%20kat%C4%B1lmak%20ve%20m%C3%BC%C5%9Fteri%20takibi%20d%C3%BCzeni%20kurmak%20istiyorum"
-              class="inline-flex items-center gap-2 mt-4 bg-cyan-500 text-black font-semibold rounded-xl px-4 py-2 text-sm hover:bg-cyan-400"
+              class="inline-flex items-center gap-2 mt-4 bg-cyan-500 text-black font-semibold rounded-xl px-4 py-2 text-sm hover:bg-cyan-400 w-full md:w-auto"
               >CRM Eğitimi Almak İstiyorum</a
             >
           </div>
@@ -1227,7 +1222,7 @@
     <!-- Kendi Paketini Oluştur -->
     <section
       id="build-your-package"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <div
         class="bg-gradient-to-br from-cyan-500/10 via-blue-500/0 to-transparent ring-1 ring-white/10 rounded-3xl p-8 relative overflow-hidden"
@@ -1236,7 +1231,7 @@
           class="absolute -inset-32 bg-[radial-gradient(circle_at_20%_20%,rgba(0,255,255,0.18)_0%,rgba(0,0,0,0)_70%)] blur-3xl opacity-40 pointer-events-none"
         ></div>
 
-        <div class="relative z-10 flex flex-col lg:flex-row gap-10">
+        <div class="relative z-10 flex flex-col lg:flex-row gap-5 md:gap-10">
           <!-- left copy -->
           <div class="flex-1 max-w-lg">
             <h2
@@ -1277,7 +1272,7 @@
 
             <a
               href="https://wa.me/905324514008?text=Markam%C4%B1%20b%C3%BCy%C3%BCtmek%20i%C3%A7in%20bana%20%C3%B6zel%20paket%20olu%C5%9Fturur%20musunuz%3F"
-              class="inline-flex items-center gap-2 mt-8 bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 ring-1 ring-[#25D366]/40 shadow-[0_0_20px_rgba(37,211,102,0.6)]"
+              class="inline-flex items-center gap-2 mt-8 bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 ring-1 ring-[#25D366]/40 shadow-[0_0_20px_rgba(37,211,102,0.6)] w-full md:w-auto"
             >
               WhatsApp’tan Hızlı Fiyat Sor
               <svg
@@ -1301,7 +1296,7 @@
           >
             <form id="packageForm" class="space-y-6 text-sm">
               <!-- quantities -->
-              <div class="grid grid-cols-2 gap-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label
                     class="block text-white/70 text-[12px] mb-2"
@@ -1344,7 +1339,7 @@
               </div>
 
               <!-- checkboxes -->
-              <div class="grid sm:grid-cols-2 gap-4">
+              <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
                 <label
                   class="flex items-start gap-2 bg-white/5 rounded-xl p-3 ring-1 ring-white/10 cursor-pointer"
                 >
@@ -1396,7 +1391,7 @@
               </div>
 
               <!-- business info -->
-              <div class="grid sm:grid-cols-2 gap-4">
+              <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label
                     class="block text-white/70 text-[12px] mb-2"
@@ -1499,7 +1494,7 @@
     <!-- BLOG -->
     <section
       id="blog"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <h2
         class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] mb-6"
@@ -1507,7 +1502,7 @@
         Blog: Daha Çok Müşteri Nasıl Alınır?
       </h2>
 
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Yazı 1 -->
         <div
           class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6"
@@ -1625,7 +1620,7 @@
     <!-- FAQ -->
     <section
       id="faq"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <h2
         class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] mb-8"
@@ -1634,7 +1629,7 @@
       </h2>
 
       <div
-        class="grid md:grid-cols-2 gap-6 text-left"
+        class="grid md:grid-cols-1 md:grid-cols-2 gap-6 text-left"
       >
         <div
           class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6"
@@ -1708,10 +1703,10 @@
     <!-- CONTACT -->
     <section
       id="contact"
-      class="w-full max-w-7xl mx-auto px-6 lg:px-8 pb-24"
+      class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24"
     >
       <div
-        class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8 flex flex-col lg:flex-row gap-10 items-start"
+        class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8 flex flex-col lg:flex-row gap-5 md:gap-10 items-start"
       >
         <div class="flex-1 max-w-xl w-full">
           <h2
@@ -1768,7 +1763,7 @@
 
           <a
             href="https://wa.me/905324514008?text=Markam%C4%B1%20tan%C4%B1tmak%20ve%20daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20almak%20istiyorum"
-            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold rounded-xl px-5 py-3 bg-[#25D366] text-black hover:opacity-90 shadow-[0_0_20px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40"
+            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold rounded-xl px-5 py-3 bg-[#25D366] text-black hover:opacity-90 shadow-[0_0_20px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40 w-full md:w-auto"
           >
             <span>WhatsApp’tan Yaz</span>
             <svg
@@ -1807,7 +1802,7 @@
 
     <!-- FOOTER -->
     <footer
-      class="border-t border-white/10 py-12 text-[12px] text-white/40 px-6 lg:px-8"
+      class="border-t border-white/10 py-12 text-[12px] text-white/40 px-6 lg:px-4 md:px-8"
     >
       <div
         class="w-full max-w-7xl mx-auto flex flex-col gap-4 text-center"
@@ -1946,56 +1941,35 @@
       }
     </script>
   
-    <script>
-      (function () {
-        const btn = document.getElementById('mobileMenuToggle');
-        const panel = document.getElementById('mobileMenuPanel');
-        const iconOpen = document.getElementById('mobileMenuIconOpen');
-        const iconClose = document.getElementById('mobileMenuIconClose');
-        if (!btn || !panel) return;
+<script>
+(function () {
+  const btn = document.getElementById('mobileMenuToggle');
+  const panel = document.getElementById('mobileMenuPanel');
+  const iconOpen = document.getElementById('mobileMenuIconOpen');
+  const iconClose = document.getElementById('mobileMenuIconClose');
+  if (!btn || !panel) return;
 
-        const header = document.querySelector('header');
-        const headerHeight = header ? header.offsetHeight : 64;
-        if (panel) {
-          panel.style.top = headerHeight + 'px';
-        }
+  function setOpen(open) {
+    if (open) {
+      panel.classList.remove('translate-y-[-100%]', 'opacity-0', 'pointer-events-none');
+      iconOpen && iconOpen.classList.add('hidden');
+      iconClose && iconClose.classList.remove('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    } else {
+      panel.classList.add('translate-y-[-100%]', 'opacity-0', 'pointer-events-none');
+      iconOpen && iconOpen.classList.remove('hidden');
+      iconClose && iconClose.classList.add('hidden');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+  }
+  let open = false;
+  btn.addEventListener('click', () => { open = !open; setOpen(open); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && open) { open = false; setOpen(false); } });
+  window.addEventListener('hashchange', () => { if (open) { open = false; setOpen(false); } });
+})();
+</script>
 
-        function setOpen(open) {
-          if (open) {
-            panel.classList.remove('translate-y-[-100%]', 'opacity-0', 'pointer-events-none');
-            iconOpen.classList.add('hidden');
-            iconClose.classList.remove('hidden');
-            btn.setAttribute('aria-expanded', 'true');
-            document.body.style.overflow = 'hidden';
-          } else {
-            panel.classList.add('translate-y-[-100%]', 'opacity-0', 'pointer-events-none');
-            iconOpen.classList.remove('hidden');
-            iconClose.classList.add('hidden');
-            btn.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
-          }
-        }
-        let open = false;
-        btn.addEventListener('click', function () {
-          open = !open;
-          setOpen(open);
-        });
-        // Close on escape
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' && open) {
-            open = false;
-            setOpen(false);
-          }
-        });
-        // Close on hash change (navigate to anchor)
-        window.addEventListener('hashchange', function () {
-          if (open) {
-            open = false;
-            setOpen(false);
-          }
-        });
-      })();
-    </script>
-    
 </body>
 </html>
