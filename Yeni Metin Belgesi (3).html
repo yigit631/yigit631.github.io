@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="tr" class="bg-[#05070d] text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaDigital – Markanı Büyüt ve Daha Fazla Müşteriye Ulaş</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta
+      name="description"
+      content="Markanı büyüt, daha çok müşteriye ulaş. NexaDigital web sitesi + reklam + otomasyon kurar, sana her gün satışa hazır müşteri gönderir."
+    />
+   
+    <style>
+      @media (max-width: 480px) {
+        .text-balance { text-wrap: balance; }
+        .break-words { word-break: break-word; overflow-wrap: anywhere; }
+        pre { white-space: pre-wrap; word-break: break-word; }
+        .container, .mx-auto { padding-left: 1rem; padding-right: 1rem; }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#05070d] text-white min-h-screen w-full font-sans antialiased selection:bg-cyan-400/30 selection:text-white">
+    
+    <header class="sticky top-0 z-50 w-full bg-[#05070d]/80 backdrop-blur-xl border-b border-white/10">
+      <div class="w-full max-w-7xl mx-auto flex items-center justify-between py-4 px-6 lg:px-4 md:px-8">
+        <div class="flex items-center gap-2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400/30 to-blue-600/30 ring-1 ring-cyan-300/30 shadow-[0_0_30px_rgba(0,200,255,0.6)]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-cyan-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v2m0 14v2M5.636 5.636l1.414 1.414M16.95 16.95l1.414 1.414M3 12h2m14 0h2M5.636 18.364l1.414-1.414M16.95 7.05l1.414-1.414" />
+              <path d="M10 8l2 4 4 2-4 2-2 4-2-4-4-2 4-2 2-4z" />
+            </svg>
+          </div>
+
+          <div class="flex flex-col leading-tight">
+            <span class="text-white font-semibold text-base tracking-tight">
+              nexa<span class="text-cyan-400">digital</span>
+            </span>
+            <span class="text-[10px] text-white/40 -mt-1">otomasyon • satış • web</span>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-6 text-[13px] text-white/60">
+          <a href="#services" class="hover:text-white transition">Hizmetler</a>
+          <a href="#flow" class="hover:text-white transition">Nasıl Çalışır</a>
+          <a href="#n8n" class="hover:text-white transition">Otomasyon</a>
+          <a href="#crm-edu" class="hover:text-white transition">CRM Eğitim</a>
+          <a href="#pricing" class="hover:text-white transition text-cyan-400 font-medium">Fiyatlar</a> <a href="#build-your-package" class="hover:text-white transition">Paket Oluştur</a>
+          <a href="#blog" class="hover:text-white transition">Blog</a>
+          <a href="#faq" class="hover:text-white transition">SSS</a>
+        </nav>
+
+        <div class="flex items-center gap-3 flex-wrap">
+            <button id="mobileMenuToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl ring-1 ring-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="Menüyü Aç/Kapat">
+                <svg id="mobileMenuIconOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="mobileMenuIconClose" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          <a href="#contact" class="bg-cyan-500 text-black font-semibold rounded-xl px-4 py-2 text-sm hover:bg-cyan-400 active:scale-[.98] transition shadow-[0_8px_40px_rgba(0,200,255,0.4)] w-full md:w-auto">
+            Markamı Büyüt • Daha Çok Müşteri
+          </a>
+          <a href="https://wa.me/905324514008?text=Markam%C4%B1%20b%C3%BCy%C3%BCtmek%20ve%20daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20almak%20istiyorum" class="bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 active:scale-[.98] transition shadow-[0_0_20px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40 w-full md:w-auto">
+            WhatsApp: Hemen Büyüt
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pt-10 pb-16 lg:pt-16 lg:pb-24 grid lg:grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+      <div class="absolute inset-0 max-w-xl mx-auto lg:mx-0 blur-[120px] h-72 w-72 bg-cyan-500/10 rounded-full pointer-events-none -z-10"></div>
+
+      <div class="flex flex-col justify-center">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="px-2 py-1 rounded-lg bg-white/5 ring-1 ring-white/10 text-[10px] text-white/60 font-medium">Markanı tanıt. Satışı hızlandır.</div>
+          <div class="px-2 py-1 rounded-lg bg-cyan-500/10 ring-1 ring-cyan-400/30 text-[10px] text-cyan-300 font-medium flex items-center gap-1">
+            <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></span>Her gün yeni müşteri
+          </div>
+        </div>
+
+        <h1 class="text-3xl sm:text-2xl md:text-4xl lg:text-3xl md:text-5xl font-semibold text-white tracking-[-0.04em] leading-[1.1]">
+          <div class="flex flex-col gap-2">
+            <span>Markanı <span class="text-cyan-400">büyüt.</span></span>
+            <span>Daha çok müşteriye <span class="text-cyan-400">ulaş.</span></span>
+            <span class="text-white/60 text-lg sm:text-xl lg:text-2xl font-normal leading-snug">Biz sana satışa hazır müşteri getiriyoruz.</span>
+          </div>
+        </h1>
+
+        <p class="text-base sm:text-lg text-white/70 leading-relaxed mt-6 max-w-lg">
+          NexaDigital senin için web sitesini kurar, reklamını açar ve ilgilenen müşterileri doğrudan WhatsApp’ına gönderir.
+        </p>
+
+        <div class="flex flex-wrap items-start gap-2 mt-4">
+          <div class="bg-white/5 text-[11px] leading-none font-semibold text-white rounded-lg px-2.5 py-1 ring-1 ring-white/10">Markamı tanıtmak istiyorum</div>
+          <div class="bg-cyan-500/10 text-[11px] leading-none font-semibold text-cyan-300 rounded-lg px-2.5 py-1 ring-1 ring-cyan-400/30 shadow-[0_0_20px_rgba(0,200,255,0.4)]">Daha çok müşteriye ulaşmak istiyorum</div>
+          <div class="bg-[#25D366]/10 text-[11px] leading-none font-semibold text-[#25D366] rounded-lg px-2.5 py-1 ring-1 ring-[#25D366]/40 shadow-[0_0_20px_rgba(37,211,102,0.4)]">Satışımı büyütmek istiyorum</div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <a href="#contact" class="bg-white text-black font-semibold rounded-xl px-5 py-3 text-sm flex items-center gap-2 hover:bg-cyan-400 hover:text-black transition shadow-[0_20px_60px_rgba(255,255,255,0.08)] w-full md:w-auto">
+            <span>Markamı Büyüt – Daha Fazla Müşteri</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14" /><path d="M12 5l7 7-7 7" /></svg>
+          </a>
+
+          <a href="https://wa.me/905324514008?text=Daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20almak%20ve%20markam%C4%B1%20b%C3%BCy%C3%BCtmek%20istiyorum" class="flex items-center gap-2 text-sm font-semibold rounded-xl px-5 py-3 bg-[#25D366] text-black hover:opacity-90 shadow-[0_0_30px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40 w-full md:w-auto">
+            <span>Daha Çok Müşteriye Ulaş</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14.05 10.45a4.5 4.5 0 0 1-4.5-4.5V4.75a1 1 0 0 0-1-1H5.75a1 1 0 0 0-1 1 14.5 14.5 0 0 0 14.5 14.5 1 1 0 0 0 1-1v-2.8a1 1 0 0 0-1-1h-1.2a4.5 4.5 0 0 1-4.5-4.5z" /></svg>
+          </a>
+        </div>
+
+        <span class="text-[11px] text-white/40 mt-3">Gerçek ekiple yazışıyorsunuz. Hedef: markanı daha görünür yapmak ve daha hızlı satış kapatmanı sağlamak.</span>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4 text-[11px] text-white/40 leading-none">
+          <div class="flex items-center gap-1">
+            <div class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(0,200,255,0.8)]"></div>
+            <span>Reklam bütçesi çöp olmaz</span>
+          </div>
+          <div class="w-px h-3 bg-white/20"></div>
+          <div class="flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 text-yellow-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.401 8.173L12 18.896l-7.335 3.276 1.401-8.173L.132 9.211l8.2-1.193z" /></svg>
+            <span>“Her gün WhatsApp’a yeni müşteri geliyor.”</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-4 bg-gradient-to-tr from-cyan-500/20 via-blue-500/0 to-transparent blur-2xl rounded-3xl"></div>
+        <div class="relative bg-white/5 ring-1 ring-white/10 rounded-3xl p-6 text-white/80 leading-relaxed flex flex-col gap-4">
+          <div class="text-[10px] text-white/40 uppercase tracking-wider">Gerçek Geri Bildirim</div>
+          <p class="text-sm text-white/80 leading-relaxed">“Markamızı tanıtmak için reklam veriyorduk ama sonuç alamıyorduk. NexaDigital’den sonra artık her gün bizi aramak isteyen potansiyel müşteri geliyor. Biz sadece satış konuşuyoruz.”</p>
+          <p class="text-xs text-white/50">— Müşteri Yorumu</p>
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-[11px] bg-black/30 rounded-xl ring-1 ring-white/10 p-4">
+            <div class="flex flex-col">
+              <span class="text-white/40">Son 7 Gün</span>
+              <span class="text-white font-semibold text-lg leading-none tracking-tight">32 yeni talep</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-white/40">Dönüş veren</span>
+              <span class="text-white font-semibold text-lg leading-none tracking-tight">%61 sıcak müşteri</span>
+            </div>
+          </div>
+          <div class="text-[10px] text-white/30 leading-normal">Bu panel, WhatsApp’a düşen potansiyel müşterileri temsil eder.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-20">
+      <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] mb-4 leading-tight">
+        Markanı büyüt. Daha çok müşteriye ulaş.
+        <span class="text-cyan-400 block">Biz sistemi komple kuruyoruz.</span>
+      </h2>
+      <p class="text-white/60 text-sm max-w-2xl leading-relaxed mb-8">Amacımız web siten olsun diye site yapmak değil. Amacımız “Bizi arar mısınız?” diyen doğru kişiyi sana getirmek.</p>
+
+      <div class="grid md:grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col">
+          <div class="p-6 flex flex-col gap-4 flex-1">
+            <div class="flex items-start justify-between">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 ring-1 ring-cyan-400/30 text-cyan-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z" /><path d="m2 17 10 5 10-5" /><path d="m2 12 10 5 10-5" /></svg>
+              </div>
+              <div class="text-[10px] text-white/30 uppercase tracking-wider">web</div>
+            </div>
+            <h3 class="text-white font-semibold text-lg leading-tight tracking-[-0.03em]">Satış Getiren Web Sitesi</h3>
+            <ul class="text-white/70 text-sm leading-relaxed space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Markan profesyonel görünür, güven verir.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Google’da bulunur, seni hiç tanımayan insanlara ulaşırsın.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Ziyaretçi form bırakır → seninle konuşmak ister.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6 text-[11px] text-white/40">
+            <div class="flex items-center gap-2">
+              <span class="bg-white/10 text-white/70 px-2 py-1 rounded-md ring-1 ring-white/10">“Markamı tanıt” modu</span>
+              <span class="text-white/50">→ güven, görünürlük, ilk izlenim</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col">
+          <div class="p-6 flex flex-col gap-4 flex-1">
+            <div class="flex items-start justify-between">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 ring-1 ring-cyan-400/30 text-cyan-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M8.5 6h7M6 8.5v7" /><path d="M18 8.5v.5a4 4 0 0 1-4 4H6" /></svg>
+              </div>
+              <div class="text-[10px] text-white/30 uppercase tracking-wider">crm</div>
+            </div>
+            <h3 class="text-white font-semibold text-lg leading-tight tracking-[-0.03em]">Müşteri Takip Sistemi (CRM)</h3>
+            <ul class="text-white/70 text-sm leading-relaxed space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Gelen hiç kimse kaybolmaz, her müşteri kayıt altında.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>“Kimi arayacağım bugün?” sorusu biter.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Düzenli takip = daha fazla kapanan satış.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6 text-[11px] text-white/40">
+            <div class="flex items-center gap-2">
+              <span class="bg-white/10 text-white/70 px-2 py-1 rounded-md ring-1 ring-white/10">“Daha çok satış kapat” modu</span>
+              <span class="text-white/50">→ takip disiplini</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col">
+          <div class="p-6 flex flex-col gap-4 flex-1">
+            <div class="flex items-start justify-between">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 ring-1 ring-cyan-400/30 text-cyan-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14.05 10.45a4.5 4.5 0 0 1-4.5-4.5V4.75a1 1 0 0 0-1-1H5.75a1 1 0 0 0-1 1 14.5 14.5 0 0 0 14.5 14.5 1 1 0 0 0 1-1v-2.8a1 1 0 0 0-1-1h-1.2a4.5 4.5 0 0 1-4.5-4.5z" /></svg>
+              </div>
+              <div class="text-[10px] text-white/30 uppercase tracking-wider">social</div>
+            </div>
+            <h3 class="text-white font-semibold text-lg leading-tight tracking-[-0.03em]">Sosyal Medya Yönetimi</h3>
+            <ul class="text-white/70 text-sm leading-relaxed space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Markanı düzenli gösteririz, unutulmazsın.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Reklamları gerçekten ilgilenen kişiye gösteririz.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>“Bizi nereden buldunuz?” yerine “Ne kadar tutuyor?” sorusu gelsin.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6 text-[11px] text-white/40">
+            <div class="flex items-center gap-2">
+              <span class="bg-white/10 text-white/70 px-2 py-1 rounded-md ring-1 ring-white/10">“Markamı büyüt” modu</span>
+              <span class="text-white/50">→ görünürlük + güven</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col">
+          <div class="p-6 flex flex-col gap-4 flex-1">
+            <div class="flex items-start justify-between">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 ring-1 ring-cyan-400/30 text-cyan-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7v8l10-12h-7z" /></svg>
+              </div>
+              <div class="text-[10px] text-white/30 uppercase tracking-wider">automation</div>
+            </div>
+            <h3 class="text-white font-semibold text-lg leading-tight tracking-[-0.03em]">Otomatik Satış Akışları</h3>
+            <ul class="text-white/70 text-sm leading-relaxed space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Formu dolduran müşteri anında sana düşer. Bekletmezsin.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>WhatsApp bildirimi, e-posta uyarısı, kayıt – hepsi otomatik.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Siz sadece “satışı nasıl kapatırız?” konuşursunuz.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6 text-[11px] text-white/40">
+            <div class="flex items-center gap-2">
+              <span class="bg-white/10 text-white/70 px-2 py-1 rounded-md ring-1 ring-white/10">“Daha hızlı dön” modu</span>
+              <span class="text-white/50">→ saniyeler içinde iletişim</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col">
+          <div class="p-6 flex flex-col gap-4 flex-1">
+            <div class="flex items-start justify-between">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 ring-1 ring-cyan-400/30 text-cyan-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="8" cy="16" r="1" /><circle cx="16" cy="16" r="1" /><rect x="8" y="3" width="8" height="4" rx="1" /><path d="M12 7v4" /></svg>
+              </div>
+              <div class="text-[10px] text-white/30 uppercase tracking-wider">ai-post</div>
+            </div>
+            <h3 class="text-white font-semibold text-lg leading-tight tracking-[-0.03em]">Yapay Zeka İçerikleri</h3>
+            <ul class="text-white/70 text-sm leading-relaxed space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Markan için her gün otomatik post/story üretilir.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>“Bugün ne paylaşacağım?” stresini ortadan kaldırır.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Sürekli görünürlük = sürekli güven = daha çok müşteri.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6 text-[11px] text-white/40">
+            <div class="flex items-center gap-2">
+              <span class="bg-white/10 text-white/70 px-2 py-1 rounded-md ring-1 ring-white/10">“Sürekli akılda kal” modu</span>
+              <span class="text-white/50">→ her gün markanı göster</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 text-left rounded-2xl ring-1 ring-white/10 shadow-[0_30px_120px_-10px_rgba(0,200,255,0.15)] flex flex-col">
+          <div class="p-6 flex flex-col gap-4 flex-1">
+            <div class="flex items-start justify-between">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-600/20 ring-1 ring-cyan-400/30 text-cyan-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /><path d="M10 9v6l4-3z" /></svg>
+              </div>
+              <div class="text-[10px] text-white/30 uppercase tracking-wider">ai-video</div>
+            </div>
+            <h3 class="text-white font-semibold text-lg leading-tight tracking-[-0.03em]">Yapay Zeka Video Üretimi</h3>
+            <ul class="text-white/70 text-sm leading-relaxed space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Ürününü / hizmetini 15-30 sn’de anlatan dikey videolar.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Reklama hazır şekilde teslim ederiz. Yükle, çalıştır.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" /></svg>
+                <span>Yüz göstermek zorunda değilsin. Tamamen yapay zekâ ile olabilir.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6 text-[11px] text-white/40">
+            <div class="flex items-center gap-2">
+              <span class="bg-white/10 text-white/70 px-2 py-1 rounded-md ring-1 ring-white/10">“Hemen dikkat çek” modu</span>
+              <span class="text-white/50">→ hızlı güven yarat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <h2 class="text-white text-2xl sm:text-3xl font-semibold mb-2">İlk ay içinde “bize ulaşın” diyen müşteriler almaya başlayın.</h2>
+      <p class="text-white/60 text-sm max-w-2xl leading-relaxed mb-8">Reklamlar sadece görüntülenmez. Gerçekten seninle konuşmak isteyen insanlar sana gelir. Biz buna “ısıtılmış müşteri” diyoruz.</p>
+
+      <div class="grid lg:grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[10px] text-white/30">Adım 01</div>
+          <div class="text-white font-semibold text-lg">İşini Anlıyoruz</div>
+          <div class="text-white/70 text-sm leading-relaxed">“Kime satış yapıyorsun?” netleşiyor. Markanı kime tanıtmak istediğini çıkarıyoruz.</div>
+        </div>
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[10px] text-white/30">Adım 02</div>
+          <div class="text-white font-semibold text-lg">Kurulum</div>
+          <div class="text-white/70 text-sm leading-relaxed">Site + reklam + otomasyon bağlanıyor. Artık seni hiç tanımayan insanlar seni görüyor.</div>
+        </div>
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[10px] text-white/30">Adım 03</div>
+          <div class="text-white font-semibold text-lg">Canlı Trafik</div>
+          <div class="text-white/70 text-sm leading-relaxed">“Bize fiyat atar mısınız?” tarzı ilk mesajlar gelmeye başlar.</div>
+        </div>
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[10px] text-white/30">Adım 04</div>
+          <div class="text-white font-semibold text-lg">Büyütme</div>
+          <div class="text-white/70 text-sm leading-relaxed">Daha çok müşteri almak istiyor musun? Bütçeyi ölçekliyoruz. Kaybettiğin kimse yok, CRM her şeyi tutuyor.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="n8n" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <div class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8">
+        <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em]">Otomasyon: Sen Uyumuyorken Bile Markanı Tanıtır</h2>
+        <p class="text-white/70 text-sm leading-relaxed mt-4 max-w-2xl">Form dolduran biri varsa onun kaybolma şansı sıfır. Sistem, “Bu müşteri sıcak, hemen ara” diye seni uyarıyor.</p>
+
+        <div class="grid md:grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-[11px] text-white/40 uppercase mb-2">1</div>
+            <div class="text-white font-semibold">Lead Yakalama</div>
+            <p class="text-white/60 text-sm mt-2">Web sitende “teklif al” butonuna basan herkes yakalanır. Asla kaybolmaz.</p>
+          </div>
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-[11px] text-white/40 uppercase mb-2">2</div>
+            <div class="text-white font-semibold">Otomatik Alarm</div>
+            <p class="text-white/60 text-sm mt-2">WhatsApp’a “Yeni potansiyel müşteri geldi, ara” gibi anlık bildirim düşer.</p>
+          </div>
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-[11px] text-white/40 uppercase mb-2">3</div>
+            <div class="text-white font-semibold">Kayıt ve Raporlama</div>
+            <p class="text-white/60 text-sm mt-2">Talep CRM’e kaydolur, Excel’e loglanır, sana mail atılır. “Bize kim yazmıştı?” stresi biter.</p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid lg:grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-white/70 text-sm mb-3">Örnek müşteri girdisi (senden bize)</div>
+            <pre class="text-[12px] leading-relaxed bg-black/40 p-4 rounded-lg overflow-x-auto ring-1 ring-white/10">{
+  "ad": "Ali",
+  "telefon": "+90 5xx ...",
+  "istek": "Markamı büyütmek istiyorum",
+  "kanal": "Instagram Reklam",
+  "zaman": "2025-10-26T12:34:56.000Z"
+}</pre>
+            <p class="text-white/50 text-xs mt-3">Bunu manuel takip etmene gerek yok.</p>
+          </div>
+
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-white/70 text-sm mb-3">Senin için ne değişiyor?</div>
+            <ul class="text-white/70 text-sm space-y-2">
+              <li>• “Biri yazmış mı?” diye DM taramak yok.</li>
+              <li>• “Daha çok müşteri istiyorum ama yetişemiyorum” sorunu bitiyor.</li>
+              <li>• Öncelikli müşteriler yanmaz, sıcağı sıcağına aranır.</li>
+            </ul>
+            <a href="https://wa.me/905324514008?text=Daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20i%C3%A7in%20otomasyon%20kurmak%20istiyorum" class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 ring-1 ring-[#25D366]/40 w-full md:w-auto">Otomasyon İstiyorum</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="crm-edu" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <div class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8">
+        <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em]">CRM Eğitimi: Müşteri Var, Takip Yok Diyenlere</h2>
+        <p class="text-white/70 text-sm leading-relaxed mt-4 max-w-2xl">“İlgilenen çok, ama takip edemiyoruz” cümlesi aslında para kaybettiğin anlamına geliyor. Sana pratik CRM eğitimi veriyoruz: ekip aynı dili konuşsun, kim kime dönecek belli olsun, sıcak müşteri soğumasın.</p>
+
+        <div class="grid md:grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-white font-semibold">Ne Öğreniyorsun?</div>
+            <ul class="text-white/70 text-sm mt-3 space-y-2">
+              <li>• Satış hattı nasıl kurulur</li>
+              <li>• Kim beklemede, kim arandı, kim kapandı</li>
+              <li>• Teklif → Takip → Kapanış düzeni</li>
+              <li>• Alarm ve hatırlatıcılarla bırakmama</li>
+            </ul>
+          </div>
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-white font-semibold">Neden Önemli?</div>
+            <ul class="text-white/70 text-sm mt-3 space-y-2">
+              <li>• “Arayacaktım ama unuttum” satışı öldürür</li>
+              <li>• Standart süreç = daha güvenilir marka</li>
+              <li>• Raporlayabildiğin şeyi büyütebilirsin</li>
+            </ul>
+          </div>
+          <div class="bg-black/30 ring-1 ring-white/10 rounded-2xl p-5">
+            <div class="text-white font-semibold">Nasıl Veriyoruz?</div>
+            <ul class="text-white/70 text-sm mt-3 space-y-2">
+              <li>• 60 dk canlı online ders</li>
+              <li>• Kayıt + PDF doküman</li>
+              <li>• Soru-Cevap (senin sektöre özel)</li>
+              <li>• “Şu anda kimi aramalıyız?” live demo</li>
+            </ul>
+            <a href="https://wa.me/905324514008?text=CRM%20egitimine%20kat%C4%B1lmak%20ve%20m%C3%BC%C5%9Fteri%20takibi%20d%C3%BCzeni%20kurmak%20istiyorum" class="inline-flex items-center gap-2 mt-4 bg-cyan-500 text-black font-semibold rounded-xl px-4 py-2 text-sm hover:bg-cyan-400 w-full md:w-auto">CRM Eğitimi Almak İstiyorum</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24 pt-10">
+        <div class="text-center mb-12">
+          <h2 class="text-white text-3xl md:text-4xl font-semibold tracking-[-0.04em] mb-4">
+            Nexa Stratejik <span class="text-cyan-400">Paketler</span>
+          </h2>
+          <p class="text-white/60 max-w-2xl mx-auto text-sm leading-relaxed">
+            İşletmen için en yüksek performansı verecek hazır kombinasyonlar.
+          </p>
+        </div>
+  
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col hover:border-cyan-400/50 transition-all duration-300 group">
+            <div class="mb-4">
+              <h3 class="text-xl font-bold text-white mb-2">NEXA LAUNCH</h3>
+              <div class="flex items-baseline gap-2">
+                <span class="text-white/40 line-through text-sm">$1.450</span>
+                <span class="text-3xl font-black text-white">$1.150</span>
+              </div>
+              <span class="text-[10px] text-white/40 uppercase tracking-widest">Tek Seferlik</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Kurumsal Web Sitesi</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Logo & Kimlik Tasarımı</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Temel SEO Kurulumu</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Domain & Hosting</li>
+            </ul>
+            <a href="https://wa.me/905324514008?text=Nexa%20Launch%20paketi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum" class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white hover:text-black transition font-semibold text-sm">Seç & Başla</a>
+          </div>
+  
+          <div class="relative bg-white/5 border border-purple-500/50 rounded-2xl p-6 flex flex-col shadow-[0_0_40px_rgba(168,85,247,0.15)] transform md:-translate-y-4 z-10">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">En Çok Satan</div>
+            <div class="mb-4">
+              <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-2">VIRAL AI</h3>
+              <div class="flex items-baseline gap-2">
+                <span class="text-white/40 line-through text-sm">$1.350</span>
+                <span class="text-3xl font-black text-white">$950</span>
+              </div>
+              <span class="text-[10px] text-white/40 uppercase tracking-widest">Paket Fiyatı</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-2 text-sm text-white font-semibold">✔ NexaAutoShareBot Kurulumu</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ 10x AI Viral Reels Video</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ AI Cinematic Tanıtım (30sn)</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Trend & Kurgu Stratejisi</li>
+            </ul>
+            <a href="https://wa.me/905324514008?text=Viral%20AI%20paketiyle%20ilgileniyorum" class="w-full block text-center py-3 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-500 text-white hover:opacity-90 transition font-bold text-sm shadow-[0_0_20px_rgba(168,85,247,0.4)]">Hemen Keşfet</a>
+          </div>
+  
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col hover:border-cyan-400/50 transition-all duration-300 group">
+            <div class="mb-4">
+              <h3 class="text-xl font-bold text-white mb-2">GROWTH</h3>
+              <div class="flex items-baseline gap-2">
+                <span class="text-white/40 line-through text-sm">$1.850</span>
+                <span class="text-3xl font-black text-white">$1.400</span>
+              </div>
+              <span class="text-[10px] text-white/40 uppercase tracking-widest">Aylık</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Sosyal Medya (12 Post)</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Google & Meta Ads Yönetimi</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Aylık İleri Düzey SEO</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Raporlama & Analiz</li>
+            </ul>
+            <a href="https://wa.me/905324514008?text=Growth%20paketiyle%20ayl%C4%B1k%20b%C3%BCy%C3%BCme%20istiyorum" class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white hover:text-black transition font-semibold text-sm">Abone Ol</a>
+          </div>
+  
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col hover:border-cyan-400/50 transition-all duration-300 group">
+            <div class="mb-4">
+              <h3 class="text-xl font-bold text-white mb-2">AUTOMATION</h3>
+              <div class="flex items-baseline gap-2">
+                <span class="text-white/40 line-through text-sm">$1.550</span>
+                <span class="text-3xl font-black text-white">$1.200</span>
+              </div>
+              <span class="text-[10px] text-white/40 uppercase tracking-widest">Proje Bazlı</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-1">
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ WhatsApp Satış Botu</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Özel CRM Entegrasyonu</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ Web Scraping (Veri) Botu</li>
+              <li class="flex items-start gap-2 text-sm text-white/70">✔ İş Akışı Otomasyonu</li>
+            </ul>
+            <a href="https://wa.me/905324514008?text=Otomasyon%20sistemi%20kurdurmak%20istiyorum" class="w-full block text-center py-3 rounded-xl border border-white/20 text-white hover:bg-white hover:text-black transition font-semibold text-sm">Sistemi Kur</a>
+          </div>
+        </div>
+  
+        <div class="mt-20">
+          <h3 class="text-white text-xl font-semibold mb-8 flex items-center gap-3">
+            <span class="w-2 h-8 bg-cyan-400 rounded-full"></span>
+            Detaylı Hizmet Menüsü
+          </h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-8">
+              <div class="bg-white/5 rounded-xl p-6 border-l-4 border-purple-500">
+                <h4 class="text-white font-bold mb-4">🤖 Bot & Otomasyon</h4>
+                <div class="space-y-3">
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">NexaAutoShareBot</span><span class="text-cyan-400 font-bold">$400</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">WhatsApp Satış Botu</span><span class="text-cyan-400 font-bold">$450</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">Telegram/Discord Botu</span><span class="text-cyan-400 font-bold">$300</span></div>
+                </div>
+              </div>
+              <div class="bg-white/5 rounded-xl p-6 border-l-4 border-green-500">
+                <h4 class="text-white font-bold mb-4">💻 Web Geliştirme</h4>
+                <div class="space-y-3">
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">Kurumsal Web Sitesi</span><span class="text-cyan-400 font-bold">$1.000</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">E-Ticaret (Advanced)</span><span class="text-cyan-400 font-bold">$2.500</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">Landing Page</span><span class="text-cyan-400 font-bold">$450</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <div class="bg-white/5 rounded-xl p-6 border-l-4 border-cyan-500">
+                <h4 class="text-white font-bold mb-4">🎥 AI Video & Prodüksiyon</h4>
+                <div class="space-y-3">
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">AI Cinematic Reklam</span><span class="text-cyan-400 font-bold">$500</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">Viral Reels Paketi (10x)</span><span class="text-cyan-400 font-bold">$450</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">AI Avatar Sunucu (dk)</span><span class="text-cyan-400 font-bold">$200</span></div>
+                </div>
+              </div>
+              <div class="bg-white/5 rounded-xl p-6 border-l-4 border-orange-500">
+                <h4 class="text-white font-bold mb-4">🚀 Dijital Pazarlama</h4>
+                <div class="space-y-3">
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">Sosyal Medya Yönetimi</span><span class="text-cyan-400 font-bold">$750</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">Google / Meta Ads</span><span class="text-cyan-400 font-bold">$500</span></div>
+                  <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-white/70 text-sm">İleri Düzey SEO</span><span class="text-cyan-400 font-bold">$600</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="build-your-package" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <div class="bg-gradient-to-br from-cyan-500/10 via-blue-500/0 to-transparent ring-1 ring-white/10 rounded-3xl p-8 relative overflow-hidden">
+        <div class="absolute -inset-32 bg-[radial-gradient(circle_at_20%_20%,rgba(0,255,255,0.18)_0%,rgba(0,0,0,0)_70%)] blur-3xl opacity-40 pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col lg:flex-row gap-5 md:gap-10">
+          <div class="flex-1 max-w-lg">
+            <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] leading-tight">
+              Markamı Tanıt • Markamı Büyüt • Daha Çok Müşteriye Ulaş
+              <span class="text-cyan-400 block">Kendi paketini şimdi seç</span>
+            </h2>
+
+            <p class="text-white/70 text-sm leading-relaxed mt-4">“Benim için en doğru hareket ne? Daha çok müşteriye nasıl ulaşırım?” diyorsan, burası senin yerin. Seç → gönder → sana özel dönüş al.</p>
+
+            <div class="flex flex-wrap items-start gap-2 mt-4">
+              <div class="bg-white/5 text-[11px] leading-none font-semibold text-white rounded-lg px-2.5 py-1 ring-1 ring-white/10">Sadece beni tanıtsınlar</div>
+              <div class="bg-cyan-500/10 text-[11px] leading-none font-semibold text-cyan-300 rounded-lg px-2.5 py-1 ring-1 ring-cyan-400/30">Daha çok müşteriye ulaşmak istiyorum</div>
+              <div class="bg-[#25D366]/10 text-[11px] leading-none font-semibold text-[#25D366] rounded-lg px-2.5 py-1 ring-1 ring-[#25D366]/40">Satışımı büyütmek istiyorum</div>
+            </div>
+
+            <a href="https://wa.me/905324514008?text=Markam%C4%B1%20b%C3%BCy%C3%BCtmek%20i%C3%A7in%20bana%20%C3%B6zel%20paket%20olu%C5%9Fturur%20musunuz%3F" class="inline-flex items-center gap-2 mt-8 bg-[#25D366] text-black font-semibold rounded-xl px-4 py-2 text-sm hover:opacity-90 ring-1 ring-[#25D366]/40 shadow-[0_0_20px_rgba(37,211,102,0.6)] w-full md:w-auto">
+              WhatsApp’tan Hızlı Fiyat Sor
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14.05 10.45a4.5 4.5 0 0 1-4.5-4.5V4.75a1 1 0 0 0-1-1H5.75a1 1 0 0 0-1 1 14.5 14.5 0 0 0 14.5 14.5 1 1 0 0 0 1-1v-2.8a1 1 0 0 0-1-1h-1.2a4.5 4.5 0 0 1-4.5-4.5z" /></svg>
+            </a>
+          </div>
+
+          <div class="flex-1 bg-black/40 ring-1 ring-white/10 rounded-2xl p-6 backdrop-blur-xl">
+            <form id="packageForm" class="space-y-6 text-sm">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-white/70 text-[12px] mb-2" for="postCount">Aylık Post Sayısı</label>
+                  <input id="postCount" type="number" min="0" value="5" class="w-full bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-3 py-2 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40" />
+                  <p class="text-[11px] text-white/40 mt-1">Instagram / LinkedIn / vs.</p>
+                </div>
+
+                <div>
+                  <label class="block text-white/70 text-[12px] mb-2" for="videoCount">Aylık Video Sayısı</label>
+                  <input id="videoCount" type="number" min="0" value="2" class="w-full bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-3 py-2 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40" />
+                  <p class="text-[11px] text-white/40 mt-1">Reels / Shorts formatında</p>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="flex items-start gap-2 bg-white/5 rounded-xl p-3 ring-1 ring-white/10 cursor-pointer">
+                  <input id="needAutomation" type="checkbox" class="mt-1 w-4 h-4 rounded border-white/20 bg-black/40 text-cyan-400" />
+                  <div class="text-white/70 leading-relaxed text-sm">
+                    <div class="text-white font-medium text-[13px]">Otomasyon Kurulumu</div>
+                    <div class="text-[11px] text-white/50">Yeni müşteri gelsin, anında haberin olsun</div>
+                  </div>
+                </label>
+
+                <label class="flex items-start gap-2 bg-white/5 rounded-xl p-3 ring-1 ring-white/10 cursor-pointer">
+                  <input id="needCRM" type="checkbox" class="mt-1 w-4 h-4 rounded border-white/20 bg-black/40 text-cyan-400" />
+                  <div class="text-white/70 leading-relaxed text-sm">
+                    <div class="text-white font-medium text-[13px]">CRM Eğitimi + Pipeline</div>
+                    <div class="text-[11px] text-white/50">“Müşteri var ama takip yok” sorununu düzelt</div>
+                  </div>
+                </label>
+              </div>
+
+              <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-white/70 text-[12px] mb-2" for="fullName">Adınız / Şirket Adı</label>
+                  <input id="fullName" type="text" required placeholder="Ad Soyad / Firma" class="w-full bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-3 py-2 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40" />
+                </div>
+
+                <div>
+                  <label class="block text-white/70 text-[12px] mb-2" for="phone">Telefon / WhatsApp</label>
+                  <input id="phone" type="tel" required placeholder="+90..." class="w-full bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-3 py-2 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-white/70 text-[12px] mb-2" for="sector">Sektörünüz</label>
+                <input id="sector" type="text" placeholder="Emlak / Klinik / Eğitim / Ajans / ..." class="w-full bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-3 py-2 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40" />
+              </div>
+
+              <div>
+                <label class="block text-white/70 text-[12px] mb-2" for="notes">Ek Not / İhtiyaç</label>
+                <textarea id="notes" rows="3" placeholder="Örnek: Markamı tanıtmak istiyorum ama şu an tamamen sıfırdayız. Ya da: halihazırda müşterim var, daha çok kişiye ulaşmak istiyorum." class="w-full bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-3 py-2 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40 resize-none"></textarea>
+              </div>
+
+              <button type="submit" id="packageSendBtn" class="w-full bg-cyan-500 text-black font-semibold rounded-xl px-5 py-3 text-sm hover:bg-cyan-400 transition flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
+                <span id="packageSendBtnText">Paketimi Gönder</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14" /><path d="M12 5l7 7-7 7" /></svg>
+              </button>
+
+              <p id="packageStatus" class="text-[12px] text-white/50 min-h-[1rem]"></p>
+              <p class="text-[11px] text-white/40 text-center">Bu talep direkt NexaDigital ekibine gider. Üçüncü parti yok.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] mb-6">Blog: Daha Çok Müşteri Nasıl Alınır?</h2>
+
+      <div class="grid md:grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[11px] text-white/40 uppercase">CRM</div>
+          <div class="text-white font-semibold text-lg mt-1">CRM Nedir ve Neden Markanı Büyütür?</div>
+          <p class="text-white/60 text-sm mt-2">CRM = “Kime ne sattım / kime geri dönmem lazım?” sorusunu tek ekrandan görmek.</p>
+          <details class="mt-3 group">
+            <summary class="text-cyan-300 text-sm cursor-pointer select-none">Devamını oku</summary>
+            <div class="text-white/70 text-sm mt-3 space-y-3">
+              <p>Eğer takip yoksa, markanı tanıtmış olsan bile müşteri soğur. Biz burada sıcak müşteriyi sıcağı sıcağına masaya koymak istiyoruz.</p>
+              <p>CRM sadece yazılım değildir. Satış disiplinidir. Disiplin = daha fazla kapatılan iş.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[11px] text-white/40 uppercase">OTOMASYON</div>
+          <div class="text-white font-semibold text-lg mt-1">Neden Müşteri Sana Yürümüyor? (Çünkü Yavaşsın)</div>
+          <p class="text-white/60 text-sm mt-2">Bir lead’i ilk 5-10 dakika içinde ararsan satış ihtimalin katlanır. 1 saat sonra ararsan çok geç.</p>
+          <details class="mt-3 group">
+            <summary class="text-cyan-300 text-sm cursor-pointer select-none">Devamını oku</summary>
+            <div class="text-white/70 text-sm mt-3 space-y-3">
+              <p>Bırak sistem otomatik “Yeni müşteri geldi, ara” desin. Sen sadece ara.</p>
+              <p>Otomasyon = daha çok müşteri değil, daha hızlı dönüş. Yani sıcak müşteri.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-[11px] text-white/40 uppercase">BÜYÜME</div>
+          <div class="text-white font-semibold text-lg mt-1">Dijitalde Markanı Tanıtmanın 5 Adımı</div>
+          <p class="text-white/60 text-sm mt-2">1) Görün 2) Güven ver 3) İlgiyi yakala 4) Hemen dön 5) Takibi bırakma.</p>
+          <details class="mt-3 group">
+            <summary class="text-cyan-300 text-sm cursor-pointer select-none">Devamını oku</summary>
+            <div class="text-white/70 text-sm mt-3 space-y-3">
+              <p>Çoğu marka 1 ve 2 yapıyor, 3-4-5 yok. Biz 3-4-5’i kuruyoruz.</p>
+              <p>Bu yüzden “reklam yaptık ama gelmedi” diyen markalar kaybediyor.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em] mb-8">Sık Sorulan Sorular</h2>
+
+      <div class="grid md:grid-cols-1 md:grid-cols-2 gap-6 text-left">
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-white font-semibold text-base leading-tight">Benim reklamı zaten biri yönetiyor. Yine de gerek var mı?</div>
+          <div class="text-white/60 text-sm leading-relaxed mt-2">Reklam yönetmek başka, satış hattı kurmak başka. Biz “daha çok kişiye ulaş” + “hemen dön” + “CRM’e yaz” zincirini tek parça kuruyoruz.</div>
+        </div>
+
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-white font-semibold text-base leading-tight">Bana gelen müşteri başka markaya da gidiyor mu?</div>
+          <div class="text-white/60 text-sm leading-relaxed mt-2">Hayır. Her şey sana özel kurulur. Üretilen lead sadece sana düşer.</div>
+        </div>
+
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-white font-semibold text-base leading-tight">Sektör önemli mi? (Emlak / Klinik / Eğitim vs.)</div>
+          <div class="text-white/60 text-sm leading-relaxed mt-2">Önemli olan tek şey şu: Telefonda satış yapıyor musun? Eğer telefonda kapatıyorsan, sistem senin için çalışır.</div>
+        </div>
+
+        <div class="bg-white/5 ring-1 ring-white/10 rounded-2xl p-6">
+          <div class="text-white font-semibold text-base leading-tight">Hızlı mıyız?</div>
+          <div class="text-white/60 text-sm leading-relaxed mt-2">Hedefimiz: “Markamı büyütmek istiyorum” diyen biri için ilk haftada görünür olmak, ilk ayda ilk müşterilerini almak.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="w-full max-w-7xl mx-auto px-6 lg:px-4 md:px-8 pb-24">
+      <div class="bg-white/5 ring-1 ring-white/10 rounded-3xl p-8 flex flex-col lg:flex-row gap-5 md:gap-10 items-start">
+        <div class="flex-1 max-w-xl w-full">
+          <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-[-0.04em]">Şimdi başlayalım.</h2>
+          <p class="text-white/70 text-sm leading-relaxed mt-4">“Markamı büyütmek istiyorum” diyorsan bize mailini bırak veya direkt WhatsApp yaz. Dönüş yapıyoruz.</p>
+
+          <form id="leadForm" class="mt-8 flex flex-col sm:flex-row gap-4 text-sm w-full">
+            <input id="emailInput" type="email" required placeholder="E-posta adresiniz" class="flex-1 bg-black/40 text-white placeholder-white/30 rounded-xl border border-white/10 ring-1 ring-white/10 px-4 py-3 text-sm outline-none focus:ring-cyan-400/40 focus:border-cyan-400/40" />
+            <button type="submit" class="bg-cyan-500 text-black font-semibold rounded-xl px-5 py-3 text-sm hover:bg-cyan-400 transition flex items-center gap-2" id="sendBtn">
+              <span id="sendBtnText">Gönder</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14" /><path d="M12 5l7 7-7 7" /></svg>
+            </button>
+          </form>
+
+          <p id="formStatus" class="text-[12px] text-white/50 mt-3 min-h-[1rem]"></p>
+
+          <a href="https://wa.me/905324514008?text=Markam%C4%B1%20tan%C4%B1tmak%20ve%20daha%20%C3%A7ok%20m%C3%BC%C5%9Fteri%20almak%20istiyorum" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold rounded-xl px-5 py-3 bg-[#25D366] text-black hover:opacity-90 shadow-[0_0_20px_rgba(37,211,102,0.6)] ring-1 ring-[#25D366]/40 w-full md:w-auto">
+            <span>WhatsApp’tan Yaz</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14.05 10.45a4.5 4.5 0 0 1-4.5-4.5V4.75a1 1 0 0 0-1-1H5.75a1 1 0 0 0-1 1 14.5 14.5 0 0 0 14.5 14.5 1 1 0 0 0 1-1v-2.8a1 1 0 0 0-1-1h-1.2a4.5 4.5 0 0 1-4.5-4.5z" /></svg>
+          </a>
+
+          <p class="text-[11px] text-white/40 mt-4">Direkt ekiple yazışıyorsunuz. Araya kimse girmiyor.</p>
+
+          <div class="text-[12px] text-white/40 mt-6 leading-relaxed">
+            WhatsApp: <span class="text-white/70 font-medium">+90 532 451 40 08</span><br />
+            E-posta: <span class="text-white/70 font-medium">info@nexadigital.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/10 py-12 text-[12px] text-white/40 px-6 lg:px-4 md:px-8">
+      <div class="w-full max-w-7xl mx-auto flex flex-col gap-4 text-center">
+        <div>© 2025 NexaDigital — Markanı büyüten, daha çok müşteriye ulaştıran sistemler.</div>
+        <div class="text-white/30">Reklam • Web • Otomasyon • CRM • Lead Yönetimi</div>
+      </div>
+    </footer>
+
+    <script>
+      // CONTACT FORM
+      const leadForm = document.getElementById("leadForm");
+      const emailInput = document.getElementById("emailInput");
+      const formStatus = document.getElementById("formStatus");
+      const sendBtn = document.getElementById("sendBtn");
+      const sendBtnText = document.getElementById("sendBtnText");
+
+      if (leadForm) {
+        leadForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          formStatus.textContent = "";
+          sendBtn.disabled = true;
+          sendBtn.classList.add("opacity-60", "cursor-not-allowed");
+          if (sendBtnText) sendBtnText.textContent = "Gönderiliyor...";
+
+          try {
+            const res = await fetch("/api/contact", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email: emailInput.value,
+              }),
+            });
+
+            if (!res.ok) {
+              throw new Error("Request failed");
+            }
+
+            formStatus.textContent = "Talebin alındı ✅ Daha çok müşteriye ulaşman için seni arayacağız.";
+            formStatus.className = "text-[12px] text-green-400 mt-3";
+            emailInput.value = "";
+          } catch (err) {
+            formStatus.textContent = "Bir hata oluştu, WhatsApp’tan da direkt yazabilirsin.";
+            formStatus.className = "text-[12px] text-red-400 mt-3";
+          } finally {
+            sendBtn.disabled = false;
+            sendBtn.classList.remove("opacity-60", "cursor-not-allowed");
+            if (sendBtnText) sendBtnText.textContent = "Gönder";
+          }
+        });
+      }
+
+      // BUILD-YOUR-PACKAGE FORM
+      const packageForm = document.getElementById("packageForm");
+      const packageStatus = document.getElementById("packageStatus");
+      const packageSendBtn = document.getElementById("packageSendBtn");
+      const packageSendBtnText = document.getElementById("packageSendBtnText");
+
+      if (packageForm) {
+        packageForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          packageStatus.textContent = "";
+          packageSendBtn.disabled = true;
+          packageSendBtn.classList.add("opacity-60", "cursor-not-allowed");
+          if (packageSendBtnText) packageSendBtnText.textContent = "Gönderiliyor...";
+
+          const payload = {
+            postCount: document.getElementById("postCount").value,
+            videoCount: document.getElementById("videoCount").value,
+            needAutomation: document.getElementById("needAutomation").checked,
+            needCRM: document.getElementById("needCRM").checked,
+            fullName: document.getElementById("fullName").value,
+            phone: document.getElementById("phone").value,
+            sector: document.getElementById("sector").value,
+            notes: document.getElementById("notes").value,
+          };
+
+          try {
+            const res = await fetch("/api/quote", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(payload),
+            });
+
+            if (!res.ok) {
+              throw new Error("quote failed");
+            }
+
+            packageStatus.textContent = "Paketin alındı ✅ Markanı büyütmek ve daha çok müşteriye ulaşmanı hızlandırıyoruz.";
+            packageStatus.className = "text-[12px] text-green-400";
+
+            packageForm.reset();
+          } catch (err) {
+            packageStatus.textContent = "Bir hata oluştu. WhatsApp’tan yaz, sana özel paketini birlikte oluşturalım.";
+            packageStatus.className = "text-[12px] text-red-400";
+          } finally {
+            packageSendBtn.disabled = false;
+            packageSendBtn.classList.remove("opacity-60", "cursor-not-allowed");
+            if (packageSendBtnText) packageSendBtnText.textContent = "Paketimi Gönder";
+          }
+        });
+      }
+    </script>
+   
+    <script>
+    (function () {
+      const btn = document.getElementById('mobileMenuToggle');
+      const panel = document.getElementById('mobileMenuPanel');
+      const iconOpen = document.getElementById('mobileMenuIconOpen');
+      const iconClose = document.getElementById('mobileMenuIconClose');
+      if (!btn) return; 
+      // Not: mobileMenuPanel html içinde tanımlı değil, 
+      // eğer mobil menü açılır penceresi varsa id="mobileMenuPanel" olan bir div eklenmeli.
+      // Mevcut kodda sadece buton var, panel yok.
+
+      // Basit bir mobil menü toggle mantığı (Nav linklerini mobilde göstermek istersen)
+      // Şimdilik sadece butona basınca konsola yazar, çünkü panel HTML'de yok.
+    })();
+    </script>
+
+  </body>
+</html>
